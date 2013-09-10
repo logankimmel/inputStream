@@ -12,5 +12,6 @@ FileOutputStream fos = new FileOutputStream(fileOut)
 for(int x = 0;x < fs;x++) { 
 	bucket.add((char) bis.read())
 }
+def newbuck = bucket.join()
 
-fos.write(bucket as byte[])
+fos.write(newbuck as byte[])
